@@ -1,0 +1,174 @@
+body {
+  background-image: url("https://cdn.glitch.global/65e2a083-058e-43e9-9abc-ac9261ea98fe/body.jpg?v=1649170634728");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #654838;
+  height: 100vh;
+}
+
+#mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 750px;
+  background-color: rgb(232, 225, 217, 0.7);
+  border-radius: 10px;
+  color: #3e7c17;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #3e7c17;
+  align-self: center;
+}
+
+input {
+  padding: 5px;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+#addTip {
+  background-color: #3e7c17;
+  border: 1px solid #e8e1d9;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "PT Sans Caption", sans-serif;
+  color: #f4a442;
+}
+
+#btn {
+  background-color: rgb(244, 164, 66, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 25px;
+  color: #3e7c17;
+  font-family: "PT Sans Caption", sans-serif;
+  text-transform: uppercase;
+}
+
+#tip {
+  font-family: "PT Sans Caption", sans-serif;
+  color: #3e7c17;
+  display: none;
+}
+
+#showTotalAmount {
+  display: flex;
+}
+
+#billSplit,
+#tipSplit,
+#totalAmount {
+  background-color: rgb(244, 164, 66, 0.9);
+  font-family: "PT Sans Caption", sans-serif;
+  margin: 20px;
+  padding: 20px;
+  color: #3e7c17;
+  border: none;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 1024px) {
+  
+  #mainContainer {
+    margin-top: 150px;
+  }
+  
+    #container {
+    width: 550px;
+  }
+  
+    form {
+    width: 450px;
+  }
+}
+
+
+@media all and (max-width: 414px) {
+  
+  #container {
+    width: 380px;
+    height: 700px;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  #billSplit,
+  #tipSplit,
+  #totalAmount {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  
+  #container {
+    width: 310px;
+    height: 580px;
+  }
+
+  form {
+    width: 250px;
+      margin: 10px;
+  padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  
+  #billSplit,
+  #tipSplit,
+  #totalAmount {
+    font-size: 10px;
+      margin: 5px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  
+  #mainContainer {
+    margin-top: 20px;
+  }
+  
+  #container {
+    width: 310px;
+    height: 550px;
+  }
+
+  form {
+    width: 250px;
+      margin: 10px;
+  padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  
+  #billSplit,
+  #tipSplit,
+  #totalAmount {
+    font-size: 10px;
+      margin: 5px;
+  }
+}
